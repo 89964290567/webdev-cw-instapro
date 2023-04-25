@@ -2,7 +2,7 @@ import {renderHeaderComponent} from "./header-component.js";
 import {renderUploadImageComponent} from "./upload-image-component.js";
 import {uploadPost} from "../api.js";
 import {getToken} from "../index.js";
-
+import {safeHtmlString} from "../helpers.js";
 function renderAddPostPageComponent({ appEl, onAddPostClick }) {
   let imageUrl = "";
   const render = () => {
